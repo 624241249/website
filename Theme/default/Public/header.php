@@ -10,8 +10,8 @@
         <script src="<?php echo sk_theme_url(); ?>/css/bootstrap/dist/js/bootstrap.js"></script>
     </head>
     <body>
-
-        <nav class="navbar navbar-default content  navbar-inverse" role="navigation">
+ 
+        <nav class="navbar navbar-default content  navbar-inverse " role="navigation">
 
             <div class="container">
                 <div class="navbar-header">
@@ -40,7 +40,7 @@
                     </li>-->
                 </ul>
             </div>
-        </nav>
+        </nav> 
 <div class="actGotop"><a href="javascript:;" title="Top"></a></div>
         <script type="text/javascript">
             $(function() {
