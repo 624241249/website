@@ -1,0 +1,32 @@
+/* 
+    Document   : style
+    Created on : Oct 10, 2014, 5:26:12 PM
+    Author     : songkang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+public style
+*/
+
+
+.actGotop{position:fixed; _position:absolute; bottom:100px; right:30px; width:150px; height:195px; display:none;z-index:999;}
+.actGotop a,.actGotop a:link{width:150px; height:195px; display:inline-block; background:url(../image/blog7year_gotop.png) no-repeat; _background:url(../image/blog7year_gotop.gif) no-repeat; outline:none;}
+.actGotop a:hover{width:150px; height:195px; background:url(../image/blog7year_gotopd.gif) no-repeat; outline:none;}
+
+.tags a{
+    display: block;
+    padding:5px 10px;
+    float: left;
+    font-size:20px;
+}
+a{
+    
+}
+a:hover{
+    color:green;
+    font-weight: bold;
+ 
+    text-decoration:none;
+}

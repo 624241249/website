@@ -1,0 +1,323 @@
+[ 2014-10-08T10:17:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2014-10-08T10:17:24+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2014-10-08T16:17:37+08:00 ] 127.0.0.1 /track?trackid=14127562564135454&appid=2&tracksequence=4&efid=bf429499-eede-40ae-b99e-3b78ae8485ce&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756256322&loadEventStart=1412756256303&domComplete=1412756256303&domContentLoadedEventEnd=1412756254314&domContentLoadedEventStart=1412756254065&domInteractive=1412756254065&domLoading=1412756253778&responseEnd=1412756253838&responseStart=1412756253774&requestStart=1412756253686&secureConnectionStart=0&connectEnd=1412756253686&connectStart=1412756253626&domainLookupEnd=1412756253626&domainLookupStart=1412756253623&fetchStart=1412756253611&redirectEnd=0&redirectStart=0&unloadEventEnd=0&unloadEventStart=0&navigationStart=1412756252375&trackStart=1412756253900&domReady=1412756254066&onLoad=1412756256303&completed=onload&cdn=464&cdnnocache=464
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012611s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2014-10-08T16:18:10+08:00 ] 127.0.0.1 /track?trackid=14127562908282366&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756290740&loadEventStart=1412756290725&domComplete=1412756290724&domContentLoadedEventEnd=1412756290415&domContentLoadedEventStart=1412756290344&domInteractive=1412756290344&domLoading=1412756290183&responseEnd=1412756290165&responseStart=1412756290161&requestStart=1412756289782&secureConnectionStart=0&connectEnd=1412756289779&connectStart=1412756289779&domainLookupEnd=1412756289779&domainLookupStart=1412756289779&fetchStart=1412756289779&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756290164&unloadEventStart=1412756290164&navigationStart=1412756289779&trackStart=1412756290200&domReady=1412756290344&onLoad=1412756290725&completed=onload&cdn=12&cdnnocache=233
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000225s ]
+
+[ 2014-10-08T16:18:21+08:00 ] 127.0.0.1 /track?trackid=14127563009993854&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756300903&loadEventStart=1412756300896&domComplete=1412756300896&domContentLoadedEventEnd=1412756300641&domContentLoadedEventStart=1412756300510&domInteractive=1412756300510&domLoading=1412756300167&responseEnd=1412756300163&responseStart=1412756300161&requestStart=1412756300077&secureConnectionStart=0&connectEnd=1412756300071&connectStart=1412756300071&domainLookupEnd=1412756300071&domainLookupStart=1412756300071&fetchStart=1412756300071&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756300162&unloadEventStart=1412756300162&navigationStart=1412756300071&trackStart=1412756300183&domReady=1412756300510&onLoad=1412756300896&completed=onload&cdn=19&cdnnocache=65
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000231s ]
+
+[ 2014-10-08T16:19:06+08:00 ] 127.0.0.1 /track?trackid=14127563461828987&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756346084&loadEventStart=1412756346078&domComplete=1412756346078&domContentLoadedEventEnd=1412756345914&domContentLoadedEventStart=1412756345803&domInteractive=1412756345803&domLoading=1412756345544&responseEnd=1412756345539&responseStart=1412756345534&requestStart=1412756345448&secureConnectionStart=0&connectEnd=1412756345442&connectStart=1412756345442&domainLookupEnd=1412756345442&domainLookupStart=1412756345442&fetchStart=1412756345442&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756345535&unloadEventStart=1412756345535&navigationStart=1412756345442&trackStart=1412756345559&domReady=1412756345803&onLoad=1412756346079&completed=onload&cdn=1&cdnnocache=421
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000230s ]
+
+[ 2014-10-08T16:19:24+08:00 ] 127.0.0.1 /track?trackid=14127563647012890&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756364605&loadEventStart=1412756364599&domComplete=1412756364599&domContentLoadedEventEnd=1412756364489&domContentLoadedEventStart=1412756364402&domInteractive=1412756364401&domLoading=1412756364212&responseEnd=1412756364200&responseStart=1412756364198&requestStart=1412756364112&secureConnectionStart=0&connectEnd=1412756364109&connectStart=1412756364109&domainLookupEnd=1412756364109&domainLookupStart=1412756364109&fetchStart=1412756364109&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756364200&unloadEventStart=1412756364200&navigationStart=1412756364109&trackStart=1412756364228&domReady=1412756364402&onLoad=1412756364599&completed=onload&cdn=12&cdnnocache=321
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000223s ]
+
+[ 2014-10-08T16:19:30+08:00 ] 127.0.0.1 /track?trackid=1412756370077695&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756369978&loadEventStart=1412756369970&domComplete=1412756369970&domContentLoadedEventEnd=1412756369672&domContentLoadedEventStart=1412756369565&domInteractive=1412756369565&domLoading=1412756369376&responseEnd=1412756369373&responseStart=1412756369370&requestStart=1412756369282&secureConnectionStart=0&connectEnd=1412756369278&connectStart=1412756369278&domainLookupEnd=1412756369278&domainLookupStart=1412756369278&fetchStart=1412756369278&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756369371&unloadEventStart=1412756369371&navigationStart=1412756369278&trackStart=1412756369399&domReady=1412756369566&onLoad=1412756369970&completed=onload&cdn=30&cdnnocache=318
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000222s ]
+
+[ 2014-10-08T16:19:39+08:00 ] 127.0.0.1 /track?trackid=14127563791131746&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756379016&loadEventStart=1412756379011&domComplete=1412756379011&domContentLoadedEventEnd=1412756378862&domContentLoadedEventStart=1412756378754&domInteractive=1412756378754&domLoading=1412756378590&responseEnd=1412756378583&responseStart=1412756378581&requestStart=1412756378495&secureConnectionStart=0&connectEnd=1412756378492&connectStart=1412756378492&domainLookupEnd=1412756378492&domainLookupStart=1412756378492&fetchStart=1412756378492&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756378582&unloadEventStart=1412756378582&navigationStart=1412756378492&trackStart=1412756378606&domReady=1412756378755&onLoad=1412756379011&completed=onload&cdn=255&cdnnocache=316
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000247s ]
+
+[ 2014-10-08T16:19:52+08:00 ] 127.0.0.1 /track?trackid=14127563929796095&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756392893&loadEventStart=1412756392877&domComplete=1412756392876&domContentLoadedEventEnd=1412756391574&domContentLoadedEventStart=1412756391475&domInteractive=1412756391475&domLoading=1412756391329&responseEnd=1412756391325&responseStart=1412756391323&requestStart=1412756391230&secureConnectionStart=0&connectEnd=1412756391223&connectStart=1412756391223&domainLookupEnd=1412756391223&domainLookupStart=1412756391223&fetchStart=1412756391223&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756391324&unloadEventStart=1412756391324&navigationStart=1412756391223&trackStart=1412756391344&domReady=1412756391477&onLoad=1412756392877&completed=onload&cdn=229&cdnnocache=295
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000219s ]
+
+[ 2014-10-08T16:20:01+08:00 ] 127.0.0.1 /track?trackid=14127564010132391&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756400916&loadEventStart=1412756400911&domComplete=1412756400910&domContentLoadedEventEnd=1412756400595&domContentLoadedEventStart=1412756400495&domInteractive=1412756400495&domLoading=1412756400334&responseEnd=1412756400327&responseStart=1412756400324&requestStart=1412756400235&secureConnectionStart=0&connectEnd=1412756400226&connectStart=1412756400226&domainLookupEnd=1412756400226&domainLookupStart=1412756400226&fetchStart=1412756400226&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756400327&unloadEventStart=1412756400327&navigationStart=1412756400226&trackStart=1412756400349&domReady=1412756400497&onLoad=1412756400911&completed=onload&cdn=244&cdnnocache=303
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2014-10-08T16:20:17+08:00 ] 127.0.0.1 /track?trackid=14127564175968127&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756417499&loadEventStart=1412756417493&domComplete=1412756417493&domContentLoadedEventEnd=1412756417316&domContentLoadedEventStart=1412756417170&domInteractive=1412756417170&domLoading=1412756417006&responseEnd=1412756417003&responseStart=1412756417000&requestStart=1412756416909&secureConnectionStart=0&connectEnd=1412756416906&connectStart=1412756416906&domainLookupEnd=1412756416906&domainLookupStart=1412756416906&fetchStart=1412756416906&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756417001&unloadEventStart=1412756417001&navigationStart=1412756416906&trackStart=1412756417026&domReady=1412756417171&onLoad=1412756417493&completed=onload&cdn=289&cdnnocache=341
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000224s ]
+
+[ 2014-10-08T16:20:31+08:00 ] 127.0.0.1 /track?trackid=14127564311723838&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756431081&loadEventStart=1412756431066&domComplete=1412756431066&domContentLoadedEventEnd=1412756430013&domContentLoadedEventStart=1412756429955&domInteractive=1412756429955&domLoading=1412756429739&responseEnd=1412756429735&responseStart=1412756429733&requestStart=1412756429646&secureConnectionStart=0&connectEnd=1412756429635&connectStart=1412756429635&domainLookupEnd=1412756429635&domainLookupStart=1412756429635&fetchStart=1412756429635&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756429734&unloadEventStart=1412756429734&navigationStart=1412756429635&trackStart=1412756429766&domReady=1412756429955&onLoad=1412756431067&completed=onload&cdn=25&cdnnocache=302
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000227s ]
+
+[ 2014-10-08T16:20:34+08:00 ] 127.0.0.1 /track?trackid=14127564342884265&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756434200&loadEventStart=1412756434186&domComplete=1412756434186&domContentLoadedEventEnd=1412756432267&domContentLoadedEventStart=1412756432202&domInteractive=1412756432202&domLoading=1412756432036&responseEnd=1412756432025&responseStart=1412756432022&requestStart=1412756431930&secureConnectionStart=0&connectEnd=1412756431927&connectStart=1412756431927&domainLookupEnd=1412756431927&domainLookupStart=1412756431927&fetchStart=1412756431927&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756432024&unloadEventStart=1412756432024&navigationStart=1412756431927&trackStart=1412756432053&domReady=1412756432202&onLoad=1412756434186&completed=onload&cdn=213&cdnnocache=273
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000227s ]
+
+[ 2014-10-08T16:20:37+08:00 ] 127.0.0.1 /track?trackid=14127564376361664&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756437536&loadEventStart=1412756437527&domComplete=1412756437527&domContentLoadedEventEnd=1412756436073&domContentLoadedEventStart=1412756436021&domInteractive=1412756436021&domLoading=1412756435815&responseEnd=1412756435803&responseStart=1412756435800&requestStart=1412756435704&secureConnectionStart=0&connectEnd=1412756435701&connectStart=1412756435701&domainLookupEnd=1412756435701&domainLookupStart=1412756435701&fetchStart=1412756435701&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756435802&unloadEventStart=1412756435802&navigationStart=1412756435701&trackStart=1412756435831&domReady=1412756436022&onLoad=1412756437527&completed=onload&cdn=241&cdnnocache=303
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000225s ]
+
+[ 2014-10-08T16:20:39+08:00 ] 127.0.0.1 /track?trackid=14127564397003897&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412756439603&loadEventStart=1412756439597&domComplete=1412756439597&domContentLoadedEventEnd=1412756439248&domContentLoadedEventStart=1412756439192&domInteractive=1412756439192&domLoading=1412756439008&responseEnd=1412756438999&responseStart=1412756438996&requestStart=1412756438898&secureConnectionStart=0&connectEnd=1412756438895&connectStart=1412756438895&domainLookupEnd=1412756438895&domainLookupStart=1412756438895&fetchStart=1412756438895&redirectEnd=0&redirectStart=0&unloadEventEnd=1412756438998&unloadEventStart=1412756438998&navigationStart=1412756438895&trackStart=1412756439031&domReady=1412756439193&onLoad=1412756439597&completed=onload&cdn=217&cdnnocache=308
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000214s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000221s ]
+
+[ 2014-10-08T16:40:33+08:00 ] 127.0.0.1 /track?trackid=14127576336086998&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412757633518&loadEventStart=1412757633504&domComplete=1412757633504&domContentLoadedEventEnd=1412757633102&domContentLoadedEventStart=1412757633060&domInteractive=1412757633060&domLoading=1412757631685&responseEnd=1412757631864&responseStart=1412757631680&requestStart=1412757631573&secureConnectionStart=0&connectEnd=1412757631573&connectStart=1412757631511&domainLookupEnd=1412757631511&domainLookupStart=1412757631511&fetchStart=1412757631507&redirectEnd=0&redirectStart=0&unloadEventEnd=0&unloadEventStart=0&navigationStart=1412757631507&trackStart=1412757631828&domReady=1412757633061&onLoad=1412757633504&completed=onload&cdn=167&cdnnocache=333
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000223s ]
+
+[ 2014-10-08T16:40:41+08:00 ] 127.0.0.1 /track?trackid=14127576411583237&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412757641086&loadEventStart=1412757641055&domComplete=1412757641055&domContentLoadedEventEnd=1412757640766&domContentLoadedEventStart=1412757640652&domInteractive=1412757640652&domLoading=1412757640463&responseEnd=1412757640456&responseStart=1412757640452&requestStart=1412757640347&secureConnectionStart=0&connectEnd=1412757640342&connectStart=1412757640342&domainLookupEnd=1412757640342&domainLookupStart=1412757640342&fetchStart=1412757640342&redirectEnd=0&redirectStart=0&unloadEventEnd=1412757640455&unloadEventStart=1412757640455&navigationStart=1412757640342&trackStart=1412757640480&domReady=1412757640653&onLoad=1412757641055&completed=onload&cdn=1&cdnnocache=71
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000241s ]
+
+[ 2014-10-08T16:40:43+08:00 ] 127.0.0.1 /track?trackid=14127576434881241&appid=2&tracksequence=4&efid=BF429499-EEDE-40AE-B99E-3B78AE8485CE&efsid=&ctr=cn&lng=cs&ptn=&hitserver=CT1-ETOWNSP2&loadEventEnd=1412757643395&loadEventStart=1412757643385&domComplete=1412757643385&domContentLoadedEventEnd=1412757643312&domContentLoadedEventStart=1412757643272&domInteractive=1412757643271&domLoading=1412757642888&responseEnd=1412757642882&responseStart=1412757642880&requestStart=1412757642880&secureConnectionStart=0&connectEnd=1412757642874&connectStart=1412757642874&domainLookupEnd=1412757642874&domainLookupStart=1412757642874&fetchStart=1412757642874&redirectEnd=0&redirectStart=0&unloadEventEnd=1412757642881&unloadEventStart=1412757642881&navigationStart=1412757642874&trackStart=1412757642909&domReady=1412757643272&onLoad=1412757643385&completed=onload&cdn=13&cdnnocache=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000242s ]
+
