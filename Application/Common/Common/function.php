@@ -11,7 +11,7 @@ function sk_option($meta_key, $type = 'public') {
 //网站地址
 function sk_site_url() {
 //	return M('option')->where("meta_key='site_url'")->getField('meta_value');
-    return "http://localhost/blog";
+    return "http://localhost";
 }
 
 ;
@@ -25,15 +25,30 @@ function sk_theme_url() {
 
 //加载公共模板
 function sk_template_part($name) {
-    echo W("Public/index", array($name));
+    echo W("Common/Public/index", array($name));
 }
 
 //加载评论模板
 function sk_template_comment($articleid) {
-    echo W("Public/comment", array($articleid));
+    echo W("Common/Public/comment", array($articleid));
 }
 
-;
+//加载文章模板
+function sk_template_articlelist() {
+    echo W("Common/Public/articlelist");
+}
+
+function sk_islogin(){
+    $value = $_SESSION['admin_user'];
+    if($value == "aikangs"){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+ 
 
 ////加载php文件
 //function mc_template($name) {
@@ -79,7 +94,7 @@ function sk_title() {
         } elseif (ACTION_NAME == "tag") {
             $title = $_GET['tag'] . ' - ' . sk_option('site_name');
         } else {
-            $title = '未知页面';
+            $title = sk_option('site_name');
         }
     } elseif (MODULE_NAME == 'Page') {
         if (ACTION_NAME == 'about') {
@@ -89,59 +104,62 @@ function sk_title() {
 //            $title = '联系我 - ' . sk_option('site_name');
 //        }
     } else {
-        $title = '未知页面 - ' . sk_option('site_name');
+        $title = sk_option('site_name') . sk_option('site_name');
     };
     return $title;
 }
 
-;
+function sk_meta_seo() {
+    $keywords = "java,php,WEB前端,web前端开发,javascript,HTML,css,技术随笔";//mc_option('article_keywords');
+    $description = "乐于总结，乐于分享。";//mc_option('article_description');
+    $meta .= '<meta name="keywords" content="' . $keywords . '">';
+    $meta .= '<meta name="description" content="' . $description . '">';
+    return $meta;
+}
 
 //HTML危险标签过滤
 function sk_remove_html($str) {
-	$str = htmlspecialchars_decode($str);
-	$str=preg_replace("/\s+/", " ", $str); //过滤多余回车 
-	$str=preg_replace("/<[ ]+/si","<",$str); //过滤<__("<"号后面带空格) 
-				
-	$str=preg_replace("/<\!--.*?-->/si","",$str); //注释 
-	$str=preg_replace("/<(\!.*?)>/si","",$str); //过滤DOCTYPE 
-	$str=preg_replace("/<(\/?html.*?)>/si","",$str); //过滤html标签 
-	$str=preg_replace("/<(\/?head.*?)>/si","",$str); //过滤head标签 
-	$str=preg_replace("/<(\/?meta.*?)>/si","",$str); //过滤meta标签 
-	$str=preg_replace("/<(\/?body.*?)>/si","",$str); //过滤body标签 
-	$str=preg_replace("/<(\/?link.*?)>/si","",$str); //过滤link标签 
-	$str=preg_replace("/<(\/?form.*?)>/si","",$str); //过滤form标签 
-	$str=preg_replace("/cookie/si","COOKIE",$str); //过滤COOKIE标签 
-				
-	$str=preg_replace("/<(applet.*?)>(.*?)<(\/applet.*?)>/si","",$str); //过滤applet标签 
-	$str=preg_replace("/<(\/?applet.*?)>/si","",$str); //过滤applet标签 
-				
-	$str=preg_replace("/<(style.*?)>(.*?)<(\/style.*?)>/si","",$str); //过滤style标签 
-	$str=preg_replace("/<(\/?style.*?)>/si","",$str); //过滤style标签 
-				
-	$str=preg_replace("/<(title.*?)>(.*?)<(\/title.*?)>/si","",$str); //过滤title标签 
-	$str=preg_replace("/<(\/?title.*?)>/si","",$str); //过滤title标签 
-				
-	$str=preg_replace("/<(object.*?)>(.*?)<(\/object.*?)>/si","",$str); //过滤object标签 
-	$str=preg_replace("/<(\/?objec.*?)>/si","",$str); //过滤object标签 
-				
-	$str=preg_replace("/<(noframes.*?)>(.*?)<(\/noframes.*?)>/si","",$str); //过滤noframes标签 
-	$str=preg_replace("/<(\/?noframes.*?)>/si","",$str); //过滤noframes标签 
-				
-	$str=preg_replace("/<(i?frame.*?)>(.*?)<(\/i?frame.*?)>/si","",$str); //过滤frame标签 
-	$str=preg_replace("/<(\/?i?frame.*?)>/si","",$str); //过滤frame标签 
-				
-	$str=preg_replace("/<(script.*?)>(.*?)<(\/script.*?)>/si","",$str); //过滤script标签 
-	$str=preg_replace("/<(\/?script.*?)>/si","",$str); //过滤script标签 
-	$str=preg_replace("/javascript/si","Javascript",$str); //过滤script标签 
-	$str=preg_replace("/vbscript/si","Vbscript",$str); //过滤script标签 
-	$str=preg_replace("/on([a-z]+)\s*=/si","On\\1=",$str); //过滤script标签 
-	$str=preg_replace("/&#/si","&＃",$str); //过滤script标签
-        
-	return $str;
+    $str = htmlspecialchars_decode($str);
+    $str = preg_replace("/\s+/", " ", $str); //过滤多余回车 
+    $str = preg_replace("/<[ ]+/si", "<", $str); //过滤<__("<"号后面带空格) 
+
+    $str = preg_replace("/<\!--.*?-->/si", "", $str); //注释 
+    $str = preg_replace("/<(\!.*?)>/si", "", $str); //过滤DOCTYPE 
+    $str = preg_replace("/<(\/?html.*?)>/si", "", $str); //过滤html标签 
+    $str = preg_replace("/<(\/?head.*?)>/si", "", $str); //过滤head标签 
+    $str = preg_replace("/<(\/?meta.*?)>/si", "", $str); //过滤meta标签 
+    $str = preg_replace("/<(\/?body.*?)>/si", "", $str); //过滤body标签 
+    $str = preg_replace("/<(\/?link.*?)>/si", "", $str); //过滤link标签 
+    $str = preg_replace("/<(\/?form.*?)>/si", "", $str); //过滤form标签 
+    $str = preg_replace("/cookie/si", "COOKIE", $str); //过滤COOKIE标签 
+
+    $str = preg_replace("/<(applet.*?)>(.*?)<(\/applet.*?)>/si", "", $str); //过滤applet标签 
+    $str = preg_replace("/<(\/?applet.*?)>/si", "", $str); //过滤applet标签 
+
+    $str = preg_replace("/<(style.*?)>(.*?)<(\/style.*?)>/si", "", $str); //过滤style标签 
+    $str = preg_replace("/<(\/?style.*?)>/si", "", $str); //过滤style标签 
+
+    $str = preg_replace("/<(title.*?)>(.*?)<(\/title.*?)>/si", "", $str); //过滤title标签 
+    $str = preg_replace("/<(\/?title.*?)>/si", "", $str); //过滤title标签 
+
+    $str = preg_replace("/<(object.*?)>(.*?)<(\/object.*?)>/si", "", $str); //过滤object标签 
+    $str = preg_replace("/<(\/?objec.*?)>/si", "", $str); //过滤object标签 
+
+    $str = preg_replace("/<(noframes.*?)>(.*?)<(\/noframes.*?)>/si", "", $str); //过滤noframes标签 
+    $str = preg_replace("/<(\/?noframes.*?)>/si", "", $str); //过滤noframes标签 
+
+    $str = preg_replace("/<(i?frame.*?)>(.*?)<(\/i?frame.*?)>/si", "", $str); //过滤frame标签 
+    $str = preg_replace("/<(\/?i?frame.*?)>/si", "", $str); //过滤frame标签 
+
+    $str = preg_replace("/<(script.*?)>(.*?)<(\/script.*?)>/si", "", $str); //过滤script标签 
+    $str = preg_replace("/<(\/?script.*?)>/si", "", $str); //过滤script标签 
+    $str = preg_replace("/javascript/si", "Javascript", $str); //过滤script标签 
+    $str = preg_replace("/vbscript/si", "Vbscript", $str); //过滤script标签 
+    $str = preg_replace("/on([a-z]+)\s*=/si", "On\\1=", $str); //过滤script标签 
+    $str = preg_replace("/&#/si", "&＃", $str); //过滤script标签
+
+    return $str;
 }
-
-
-
 
 //--------------- PUBLIC ---------------//
 //调用Article字段
@@ -166,32 +184,29 @@ function sk_get_article_tag() {
     return array_unique($res);
 }
 
- function findChild(&$arr,$id){
-    $childs=array();
-     foreach ($arr as $k => $v){
-         if($v['commentid']== $id){
-              $childs[]=$v;
-         } 
+function findChild(&$arr, $id) {
+    $childs = array();
+    foreach ($arr as $k => $v) {
+        if ($v['commentid'] == $id) {
+            $childs[] = $v;
+        }
     }
     return $childs;
 }
-function build_tree($root_id,$rows){
- 
-    $childs=findChild($rows,$root_id);
-    if(empty($childs)){
+
+function build_tree($root_id, $rows) {
+
+    $childs = findChild($rows, $root_id);
+    if (empty($childs)) {
         return null;
     }
-   foreach ($childs as $k => $v){
-       $rescurTree=build_tree($v[id],$rows);
-       if( null !=   $rescurTree){ 
-       $childs[$k]['childs']=$rescurTree;
-       }
-   }
+    foreach ($childs as $k => $v) {
+        $rescurTree = build_tree($v[id], $rows);
+        if (null != $rescurTree) {
+            $childs[$k]['childs'] = $rescurTree;
+        }
+    }
     return $childs;
 }
-
-
-
- 
 
 ?>

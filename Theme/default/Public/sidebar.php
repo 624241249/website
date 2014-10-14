@@ -17,6 +17,17 @@
         </div>
     </div>   
 
+    <div class="col-sm-12   panel  panel-info">
+<!--        <h3>相关标签</h3>-->
+        <div class="panel-body tags" >
+            <div style="text-align:center;line-height:20px;">
+<!--<p>如果您觉得本站的文章有帮助，并且条件允许的话，  希望您能慷慨捐赠，以支持本站更好的发展，支持“支付宝”。</p>-->
+<p>
+<img src="<?php echo sk_theme_url()?>/image/mianli.png"/></p>
+</div>
+            
+        </div>
+    </div>   
 
 
     <div class="col-sm-12   panel  panel-info">

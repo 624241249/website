@@ -2,7 +2,7 @@
 <html>
     <head>
         <title><?php echo sk_title() ?></title>
-
+<?php echo sk_meta_seo();?>
         <link rel="stylesheet" href="<?php echo sk_theme_url(); ?>/css/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="<?php echo sk_theme_url(); ?>/css/style.css">
         <script src="<?php echo sk_theme_url(); ?>/js/jquery.min.js"></script>
@@ -23,6 +23,7 @@
                     <li><a href="<?php echo sk_site_url()?>/?m=article&a=index">实验室</a></li>
                      <li><a href="https://github.com/aikangs" target="_blank">GitHub</a></li>
                       <li> <a href='<?php echo sk_site_url()?>/?m=page&a=index&tag=about'>关于</a></li>
+                        <li> <a href='<?php echo sk_site_url()?>/?m=admin&a=index'>管理</a></li>
 <!--                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             更多
@@ -51,8 +52,9 @@
 
 
                     $(".navbar-nav > li").eq(strs[0]).addClass("active");
+                   
                     if (strs[1] != -1) {
-                        $(".navbar-nav > li").eq(3).find("li").eq(strs[1]).addClass("active");
+                    $("#admin-nav > li").eq(strs[1]).addClass("active");
                     }
                 }
 
@@ -61,7 +63,6 @@
         
         <script type="text/javascript">
 $(function(){	
-    console.log("asd");
 	$(window).scroll(function() {		
 		if($(window).scrollTop() >= 100){
 			$('.actGotop').fadeIn(300); 

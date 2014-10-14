@@ -10,7 +10,7 @@
         <div class="col-sm-12   panel  panel-info">
             <h3><?php echo $article[0]["title"] ?></h3>
             <div class="panel-body">
-                <?php echo $article[0]["body"] ?>
+                <?php echo html_entity_decode($article[0]["body"]) ?>
             </div>
 
         </div>   
