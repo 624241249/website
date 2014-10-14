@@ -26,13 +26,16 @@ class PublicWidget extends Controller {
         $this->display("Public:comment");
     }
 
-    public function articleList() {
+    public function articleList($tag = "") {
         /**
          *  初始化文章
          */
         $Article = M('article'); // 实例化Data数据对象
 
-        $count = $Article->where("type='article'")->count(); // 查询满足要求的总记录数 $map表示查询条件
+             $map['tag'] = array('like', "%" . $tag . "%");
+              $map['type'] = array('like', "article");
+           
+        $count = $Article->where($map)->count(); // 查询满足要求的总记录数 $map表示查询条件
 
         $Page = new \Think\Page($count, 5); // 实例化分页类 传入总记录数(这是根据@979137的意见修改的,这个建议非常好!)
 
@@ -41,7 +44,7 @@ class PublicWidget extends Controller {
 
         $orderby['id'] = 'desc';
 
-        $list = $Article->order($orderby)->limit($Page->firstRow . ',' . $Page->listRows)->where("type='article'")->select();
+        $list = $Article->order($orderby)->limit($Page->firstRow . ',' . $Page->listRows)->where($map)->select();
 
         foreach($list as $key=>$value){
               $comments_count = M('comment')->where("articleid='" . $value['id'] . "'")->count();

@@ -34,8 +34,8 @@ function sk_template_comment($articleid) {
 }
 
 //加载文章模板
-function sk_template_articlelist() {
-    echo W("Common/Public/articlelist");
+function sk_template_articlelist($tag) {
+    echo W("Common/Public/articlelist",array($tag));
 }
 
 function sk_islogin(){

@@ -75,11 +75,11 @@ class IndexController extends Controller {
      */
     public function tag($tag = "") {
 
-        //  mc_set_views($id);
-        $map['tag'] = array('like', "%" . $tag . "%");
-        $article = M('article')->where($map)->select();
-
-        $this->article = $article;
+//        //  mc_set_views($id);
+//        $map['tag'] = array('like', "%" . $tag . "%");
+//        $article = M('article')->where($map)->select();
+//
+//        $this->article = $article;
         $this->theme(sk_option('theme'))->display('Article/index');
 //       $this->display('Article/single'); 
 //        $this->show();
