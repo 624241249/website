@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="row">       
-         <?php sk_template_articlelist('articlelist'); ?>
+         <?php sk_template_articlelist(); ?>
         <?php sk_template_part('sidebar'); ?>
        
        
