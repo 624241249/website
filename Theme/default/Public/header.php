@@ -42,6 +42,27 @@
                 </ul>
             </div>
         </nav> 
+        <div class="bbg">
+	<div id="popo1" class="popo" style="height: 150px; width: 150px;; left:0;top:0;"></div>
+	<div id="popo2" class="popo" style="height: 180px; width: 180px; right:0;bottom:0;"></div>
+	<div id="popo3" class="popo" style="height: 90px; width: 90px; right:0;top:0;"></div>
+	<div id="popo4" class="popo" style="height: 100px; width: 100px; left:0;bottom:0;"></div>
+	<div id="popo5" class="popo" style="height: 82px; width: 82px; left:50%;top:50%;"></div>
+	<div id="popo6" class="popo" style="height: 140px; width: 140px; left:0;top:50%;"></div>
+	<div id="popo7" class="popo" style="height: 94px; width: 94px; right:0;top:50%;"></div>
+	<div id="popo8" class="popo" style="height: 120px; width: 120px; left:50%;top:0;"></div>
+	<div id="popo9" class="popo" style="height: 174px; width: 174px; left:50%;bottom:0;"></div>
+	
+	<div id="popo10" class="popo" style="height: 116px; width: 116px; left:25%;top:25%;"></div>
+	<div id="popo11" class="popo" style="height: 140px; width: 140px; left:25%;bottom:25%;"></div>
+	<div id="popo12" class="popo" style="height: 160px; width: 160px; right:25%;top:25%;"></div>
+	<div id="popo13" class="popo" style="height: 120px; width: 120px; right:25%;bottom:25%;"></div>
+	<div id="popo14" class="popo" style="height: 174px; width: 174px; left:25%;top:50%;"></div>
+	<div id="popo15" class="popo" style="height: 116px; width: 116px; right:25%;top:50%;"></div>
+	<div id="popo16" class="popo" style="height: 140px; width: 140px; left:50%;top:25%;"></div>
+	<div id="popo17" class="popo" style="height: 100px; width: 100px; left:50%;bottom:25%;"></div>
+</div>
+
 <div class="actGotop"><a href="javascript:;" title="Top"></a></div>
         <script type="text/javascript">
             $(function() {

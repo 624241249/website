@@ -2,34 +2,33 @@
 
 <div class="container">
     <div class="row">       
-      
 
-               <?php 
-                  foreach ($article as $key => $value) {
-                      ?>
-            <div class="col-sm-12   panel  panel-info">
-                <h3><?php echo $value["title"]?></h3>
-                <div class="panel-body">
-                   <?php echo $value["body"]?>
+
+
+        <div class="col-sm-12   panel  panel-info">
+            <h3></h3>
+            <div class="panel-body">
+                <div class="col-sm-12 text-center">
+                    <img width="200" height="200" src="<?php echo sk_theme_url(); ?>/image/about.png" class="img-circle"/>
                 </div>
-<!--                <div class="row panel-body">
-                    <div class="col-sm-3 "> <?php echo $value["created"]?></div>
-                    <div class="col-sm-5 "><?php foreach ($value["tag"] as $key=>$value){
-                        echo " <a href='#'>#".$value."</a>   ";
-                    }  ?> </div>
-                    <div class="col-sm-2 "><a href="#">阅读全文</a></div>
-                    <div class="col-sm-2 "><a href="#">评论 <span class="badge">4</span></a></div>
-                </div>-->
-            </div>   
-            <?php 
-                }
-            ?>
-            
+
+                <div class="col-sm-12 text-center" style="margin-top:50px;">
+                    <!--<span style="color: rgb(255, 0, 0);">声明：本博客言论仅代表本人思想，与其他任何人或组织无关！</span>-->
+                </div>
+                
+                 <div class="col-sm-10 col-md-offset-1" style="margin-top:50px;">
+                      
+                    <span style="color: rgb(255, 0, 0);">声明：本博客言论仅代表本人思想，与其他任何人或组织无关！</span>
+                </div>
+            </div>
+
+        </div>   
 
 
 
 
-       
+
+
     </div>
 
 

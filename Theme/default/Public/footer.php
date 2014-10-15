@@ -5,7 +5,7 @@
         <div class="col-sm-12 text-center ">
 
               
-Copyright © songkang  All Rights Reserved.  粤ICP备14006329号
+Copyright ©songkang  All Rights Reserved.  粤ICP备14013373号
 
 
         </div>
