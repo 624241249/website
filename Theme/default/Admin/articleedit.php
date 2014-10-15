@@ -17,7 +17,7 @@
 
         <div class="col-md-10">
 
-            <form class="form-horizontal" id="comment_form"  method="post"  action="/?m=admin&a=save" role="form">
+            <form class="form-horizontal" id="comment_form"  method="post"  action="<?php echo U("Admin/index/save");?>" role="form">
                 <input type='hidden' name='articleid' value='<?php echo $article[0]['id'] ?>'>
                 <div id="form_check_message"></div>
 

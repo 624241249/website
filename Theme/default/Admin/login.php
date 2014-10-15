@@ -11,7 +11,7 @@
              <div class="panel panel-default">
   <div class="panel-heading text-center"><h3>登录</h3></div>
   <div class="panel-body">
-    <form class="form-horizontal" id="comment_form"  method="post"  action="/?m=admin&a=login" role="form">
+    <form class="form-horizontal" id="comment_form"  method="post"  action="<?php echo U("Admin/index/login");?>" role="form">
                 <input type='hidden' name='articleid' value='<?php echo $article[0]['id'] ?>'>
                 <div id="form_check_message"></div>
 

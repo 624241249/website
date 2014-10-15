@@ -19,11 +19,11 @@
                 </div>
                 <ul class="nav navbar-nav ">
                    
-                    <li><a href="<?php echo sk_site_url()?>/?m=article&a=index">文章</a></li>
-                    <li><a href="<?php echo sk_site_url()?>/?m=article&a=index">实验室</a></li>
+                    <li><a href="<?php echo U("Article/index/index");?>">文章</a></li>
+                    <li><a href="<?php echo U("Experiment/index/index");?>">实验室</a></li>
                      <li><a href="https://github.com/aikangs" target="_blank">GitHub</a></li>
-                      <li> <a href='<?php echo sk_site_url()?>/?m=page&a=index&tag=about'>关于</a></li>
-                        <li> <a href='<?php echo sk_site_url()?>/?m=admin&a=index'>管理</a></li>
+                      <li> <a href='<?php echo U("Page/index/index?tag=about");?>'>关于</a></li>
+                        <li> <a href='<?php echo U("Admin/index/index");?>'>管理</a></li>
 <!--                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             更多

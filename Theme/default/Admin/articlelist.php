@@ -4,14 +4,14 @@
                 foreach ($article as $key => $value) {
                     ?>
                     <div class="col-sm-12   panel  panel-info">
-                        <h3><a href="<?php echo sk_site_url() ?>/?m=article&a=single&id=<?php echo $value['id'] ?>"><?php echo $value["title"] ?></a></h3>
+                        <h3><a href="<?php echo U("Article/index/single?id=".$value['id']);?>"><?php echo $value["title"] ?></a></h3>
                         <div class="panel-body">
                             <?php echo $value["summary"] ?>
                         </div>
                         <div class="row panel-body">
                             <div class="col-sm-3 "> <?php echo $value["created"] ?></div>
                            
-                            <div class="col-sm-2 col-md-offset-7"><a onClick="" href="<?php echo sk_site_url()?>/?m=admin&a=edit&id=<?php echo $value['id']?>" class="btn btn-primary" role="button">编辑</a><a href="<?php echo sk_site_url()?>/?m=admin&a=delete&id=<?php echo $value['id']?>"  class="btn btn-primary " role="button"  onclick="{if(confirm('确定要删除吗?')){return true;}return false;}">删除</a></div>
+                            <div class="col-sm-2 col-md-offset-7"><a onClick="" href="<?php echo U("Admin/index/edit?id=".$value['id']);?>" class="btn btn-primary" role="button">编辑</a><a href="<?php echo U("Admin/index/delete?id=".$value['id']);?>"  class="btn btn-primary " role="button"  onclick="{if(confirm('确定要删除吗?')){return true;}return false;}">删除</a></div>
            
                         </div>
                     </div> 

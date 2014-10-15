@@ -11,7 +11,7 @@
         <div class="panel-body tags" >
             <?php
             foreach ($tags as $key => $tag) {
-                echo " <a href='".  sk_site_url()."/?m=article&a=tag&tag=" . $tag . "'>" . $tag . "</a>   ";
+                echo "<a href='".U("Article/index/tag?tag=".$tag)."'/>#".$tag."</a>";
             }
             ?>
         </div>

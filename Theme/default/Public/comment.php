@@ -1,7 +1,7 @@
 <div class="col-sm-12   panel  panel-info" id="comment">
     <h3>评论</h3>
     <div class="panel-body">
-        <form class="form-horizontal" id="comment_form"  method="post"  action="/?m=comment&a=index" role="form">
+        <form class="form-horizontal" id="comment_form"  method="post"  action="<?php echo U('comment/index/index');?>" role="form">
             <input type='hidden' name='articleid' value='<?php echo $articleid ?>'>
             <input type='hidden' id="commentid" name='commentid' value='0'>
             <div id="form_check_message"></div>

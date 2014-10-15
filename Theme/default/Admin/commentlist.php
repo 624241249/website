@@ -28,7 +28,7 @@
                         <div class="row panel-body">
                             <div class="col-sm-3 "> </div>
                            
-                            <div class="col-sm-2 col-md-offset-7"><a onClick="" href="<?php echo sk_site_url()?>/?m=article&a=single&id=<?php echo $value['articleid']?>#comment" class="btn btn-primary" role="button">回复</a><a href="<?php echo sk_site_url()?>/?m=admin&a=comment_delete&id=<?php echo $value['id']?>"  class="btn btn-primary " role="button"  onclick="{if(confirm('确定要删除吗?')){return true;}return false;}">删除</a></div>
+                            <div class="col-sm-2 col-md-offset-7"><a onClick="" href="<?php echo U("Article/index/single?id=".$value['articleid']."#comment");?>" class="btn btn-primary" role="button">回复</a><a href="<?php echo U("Admin/index/comment_delete?id=".$value['id']);?>"  class="btn btn-primary " role="button"  onclick="{if(confirm('确定要删除吗?')){return true;}return false;}">删除</a></div>
            
                         </div>
                     </div> 
