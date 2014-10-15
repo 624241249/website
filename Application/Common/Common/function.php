@@ -185,7 +185,7 @@ function sk_remove_html($str) {
 //调用Article字段
 function sk_get_page_field($id, $for) {
     if ($for == 'title') {
-        return M('article')->where("id='$id'")->getField('title');
+        return M('article')->where("id='$id' and type='article'")->getField('title');
     };
 }
 

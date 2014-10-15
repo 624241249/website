@@ -29142,3 +29142,91 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000252s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
 
+[ 2014-10-15T17:06:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `sk_article` [ RunTime:0.000821s ]
+SQL: SELECT * FROM `sk_article` WHERE ( type='article' )  [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `sk_option` [ RunTime:0.000612s ]
+SQL: SELECT `meta_value` FROM `sk_option` WHERE ( meta_key='theme' AND type='public' ) LIMIT 1   [ RunTime:0.000054s ]
+SQL: SELECT `tag` FROM `sk_article`  [ RunTime:0.000052s ]
+SQL: SHOW COLUMNS FROM `sk_meta` [ RunTime:0.000578s ]
+SQL: SELECT `meta_value` FROM `sk_meta` WHERE ( meta_key='site_title' AND type='public' ) LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT `meta_value` FROM `sk_meta` WHERE ( meta_key='site_keywords' AND type='public' ) LIMIT 1   [ RunTime:0.000031s ]
+SQL: SELECT `meta_value` FROM `sk_meta` WHERE ( meta_key='site_description' AND type='public' ) LIMIT 1   [ RunTime:0.000027s ]
+NOTIC: [8] Undefined variable: meta /home/songkang/web/Application/Common/Common/function.php 第 135 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: tag /home/songkang/web/Theme/default/Index/index.php 第 5 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sk_article` WHERE `tag` LIKE '%%' AND `type` LIKE 'article' LIMIT 1   [ RunTime:0.000064s ]
+SQL: SELECT * FROM `sk_article` WHERE `tag` LIKE '%%' AND `type` LIKE 'article' ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `sk_comment` [ RunTime:0.000713s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sk_comment` WHERE ( articleid='14' ) LIMIT 1   [ RunTime:0.000044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002659s ]
+SQL: SELECT `tag` FROM `sk_article`  [ RunTime:0.000034s ]
+NOTIC: [8] Undefined variable: nav_index /home/songkang/web/Theme/default/Public/sidebar.php 第 3 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002973s ]
+SQL: SELECT `tag` FROM `sk_article`  [ RunTime:0.000029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000002s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2014-10-15T17:06:35+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `sk_article` [ RunTime:0.000456s ]
+SQL: SELECT * FROM `sk_article` WHERE ( type='article' )  [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `sk_option` [ RunTime:0.000322s ]
+SQL: SELECT `meta_value` FROM `sk_option` WHERE ( meta_key='theme' AND type='public' ) LIMIT 1   [ RunTime:0.000036s ]
+SQL: SELECT `tag` FROM `sk_article`  [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `sk_meta` [ RunTime:0.000394s ]
+SQL: SELECT `meta_value` FROM `sk_meta` WHERE ( meta_key='site_title' AND type='public' ) LIMIT 1   [ RunTime:0.000037s ]
+SQL: SELECT `meta_value` FROM `sk_meta` WHERE ( meta_key='site_keywords' AND type='public' ) LIMIT 1   [ RunTime:0.000031s ]
+SQL: SELECT `meta_value` FROM `sk_meta` WHERE ( meta_key='site_description' AND type='public' ) LIMIT 1   [ RunTime:0.000028s ]
+NOTIC: [8] Undefined variable: meta /home/songkang/web/Application/Common/Common/function.php 第 135 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined index: tag /home/songkang/web/Theme/default/Index/index.php 第 5 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `sk_article` WHERE `tag` LIKE '%%' AND `type` LIKE 'article' LIMIT 1   [ RunTime:0.000045s ]
+SQL: SELECT * FROM `sk_article` WHERE `tag` LIKE '%%' AND `type` LIKE 'article' ORDER BY `id` desc LIMIT 0,5   [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `sk_comment` [ RunTime:0.000589s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sk_comment` WHERE ( articleid='14' ) LIMIT 1   [ RunTime:0.000051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002445s ]
+SQL: SELECT `tag` FROM `sk_article`  [ RunTime:0.000042s ]
+NOTIC: [8] Undefined variable: nav_index /home/songkang/web/Theme/default/Public/sidebar.php 第 3 行.
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002866s ]
+SQL: SELECT `tag` FROM `sk_article`  [ RunTime:0.000036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000005s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
