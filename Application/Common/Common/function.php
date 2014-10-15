@@ -185,14 +185,14 @@ function sk_remove_html($str) {
 //调用Article字段
 function sk_get_page_field($id, $for) {
     if ($for == 'title') {
-        return M('article')->where("id='$id' and type='article'")->getField('title');
+        return M('article')->where("id='$id'")->getField('title');
     };
 }
 
 ;
 
 function sk_get_article_tag() {
-    $temp = M('article')->field('tag')->select();
+    $temp = M('article')->where("type='article'")->field('tag')->select();
     $res = array();
     foreach ($temp as $key => $value) {
         foreach (explode(",", $value["tag"]) as $k => $v) {
