@@ -6,8 +6,25 @@ function sk_option($meta_key, $type = 'public') {
     return M('option')->where("meta_key='$meta_key' AND type='$type'")->getField('meta_value');
 }
 
-;
+/**
+ * meta 
+ * @return string
+ */
+//调用meta
+function sk_meta($meta_key, $type = 'public') {
+    return M('meta')->where("meta_key='$meta_key' AND type='$type'")->getField('meta_value');
+}
+/**
+ * 检查是否存在这个key
+ * @param type $meta_key
+ * @return type
+ */
+function sk_check_meta($meta_key) {
+    return M('meta')->where("meta_key='$meta_key'")->getField('meta_key');
+}
 
+
+ 
 //网站地址
 function sk_site_url() {
 //	return M('option')->where("meta_key='site_url'")->getField('meta_value');
@@ -37,6 +54,9 @@ function sk_template_comment($articleid) {
 function sk_template_articlelist($tag) {
     echo W("Common/Public/articlelist",array($tag));
 }
+
+
+
 
 function sk_islogin(){
     $value = $_SESSION['admin_user'];
@@ -85,33 +105,33 @@ function sk_user_ip() {
 //全站标题
 function sk_title() {
     if (MODULE_NAME == 'Home') {
-        $title = '首页 - ' . sk_option('site_name');
+        $title = '首页 - ' . sk_meta('site_title');
     } elseif (MODULE_NAME == 'Article') {
         if (ACTION_NAME == 'index') {
-            $title = '全部文章 - ' . sk_option('site_name');
+            $title = '全部文章 - ' . sk_meta('site_title');
         } elseif (ACTION_NAME == 'single') {
-            $title = sk_get_page_field($_GET['id'], 'title') . ' - ' . sk_option('site_name');
+            $title = sk_get_page_field($_GET['id'], 'title') . ' - ' . sk_meta('site_title');
         } elseif (ACTION_NAME == "tag") {
-            $title = $_GET['tag'] . ' - ' . sk_option('site_name');
+            $title = $_GET['tag'] . ' - ' . sk_meta('site_title');
         } else {
-            $title = sk_option('site_name');
+            $title = sk_option('site_title');
         }
     } elseif (MODULE_NAME == 'Page') {
         if (ACTION_NAME == 'about') {
-            $title = '关于我 - ' . sk_option('site_name');
+            $title = '关于我 - ' . sk_meta('site_title');
         }
 //        elseif(ACTION_NAME == 'about'){
 //            $title = '联系我 - ' . sk_option('site_name');
 //        }
     } else {
-        $title = sk_option('site_name') . sk_option('site_name');
+        $title = sk_meta('site_title') . sk_meta('site_title');
     };
     return $title;
 }
 
 function sk_meta_seo() {
-    $keywords = "java,php,WEB前端,web前端开发,javascript,HTML,css,技术随笔";//mc_option('article_keywords');
-    $description = "乐于总结，乐于分享。";//mc_option('article_description');
+    $keywords = sk_meta("site_keywords");//"java,php,WEB前端,web前端开发,javascript,HTML,css,技术随笔";//mc_option('article_keywords');
+    $description = sk_meta("site_description");//mc_option('article_description');
     $meta .= '<meta name="keywords" content="' . $keywords . '">';
     $meta .= '<meta name="description" content="' . $description . '">';
     return $meta;

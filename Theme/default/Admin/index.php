@@ -11,8 +11,10 @@
         </div>
 
         <div class="col-md-10">
-            <div class="col-md-3 col-md-offset-10"><a href="<?php echo sk_site_url()?>/?m=admin&a=add" class="btn btn-primary" role="button">添加文章</a></div>
-             <?php echo W("Admin/Public/admin_articlelist");?>
+           
+             <?php 
+             
+             echo W("Admin/Public/admin_articlelist");?>
             
           
             

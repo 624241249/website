@@ -162,7 +162,7 @@ class IndexController extends Controller {
             }
         }
     }
-    
+
     /**
      * 回复
      */
@@ -173,7 +173,49 @@ class IndexController extends Controller {
 //            $this->theme(sk_option('theme'))->display('Admin/commentreply');
 //        }
 //    }
-    
+
+    /*     * ****************************************************************************************** */
+
+    /**
+     * Setting...
+     */
+    public function setting($key = 'site_title') {
+        if (!sk_islogin()) {
+            $this->success('请登录', "/?m=admin&a=login");
+        } else {
+            $this->value = sk_meta($key);
+            $this->theme(sk_option('theme'))->display('Admin/setting');
+        }
+    }
+
+    public function setting_save($key = 'site_title') {
+        if (!sk_islogin()) {
+            $this->error('请登录', "/?m=admin&a=login");
+        } else {
+            if (IS_POST) {
+                if ($key != "") {
+                    $page['meta_key'] = $key;
+                    $page['meta_value'] = I('param.value');
+                    $page['type'] = "public";
+
+
+                    if (sk_check_meta($key) == "") {
+                        $result = M('meta')->data($page)->add();
+                    } else {
+                        $result = M('meta')->data($page)->save();
+                    }
+                    $this->success('修改成功.');
+                }else{
+                      $this->error('参数错误');
+                }
+            } else {
+                $this->error('你干啥呢？');
+            }
+
+
+           // $this->theme(sk_option('theme'))->display('Admin/setting');
+        }
+    }
 
 }
 
