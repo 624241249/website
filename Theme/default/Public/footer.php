@@ -2,10 +2,10 @@
     <div class="container">
     
       <div class="row">       
-        <div class="col-sm-12 text-center ">
+        <div class="col-sm-12 text-center" style="height:60px;line-height: 60px;">
 
               
-Copyright ©songkang  All Rights Reserved.  粤ICP备14013373号
+            Copyright ©songkang  All Rights Reserved.  粤ICP备14013373号
 
 
         </div>
