@@ -26,8 +26,7 @@ function sk_check_meta($meta_key) {
 
 //网站地址
 function sk_site_url() {
-//	return M('option')->where("meta_key='site_url'")->getField('meta_value');
-    return "http://localhost";
+	return M('option')->where("meta_key='site_url'")->getField('meta_value');
 }
 
 ;
