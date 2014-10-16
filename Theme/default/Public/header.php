@@ -3,11 +3,11 @@
     <head>
         <title><?php echo sk_title() ?></title>
 <?php echo sk_meta_seo();?>
-        <link rel="stylesheet" href="<?php echo sk_theme_url(); ?>/css/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="<?php echo sk_theme_url(); ?>/css/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo sk_theme_url(); ?>/css/style.css">
         <script src="<?php echo sk_theme_url(); ?>/js/jquery.min.js"></script>
         <script src="<?php echo sk_theme_url(); ?>/js/jquery.animate-colors-min.js"></script>
-        <script src="<?php echo sk_theme_url(); ?>/css/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="<?php echo sk_theme_url(); ?>/css/bootstrap/js/bootstrap.min.js"></script>
     </head>
     <body>
  
