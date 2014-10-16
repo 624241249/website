@@ -9,12 +9,12 @@
 /*
 public style
 */
-body{background-image:url(../image/5629512728352684315.png);}  
+body{background-image:url(../image/5629512728352684315.png);background-color:#7d9eae;background-repeat: repeat-x;}  
 body{
 	background-attachment:fixed;
 	background-size:contain;
 	_background-image:none;
-         padding-top: 70px;  
+         padding-top: 70px;
 }
 
 .actGotop{position:fixed; _position:absolute; bottom:100px; right:30px; width:150px; height:195px; display:none;z-index:999;}
