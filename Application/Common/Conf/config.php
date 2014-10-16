@@ -3,7 +3,7 @@ return array(
 	//'配置项'=>'配置值'
 'LOAD_EXT_CONFIG' => 'db',
 	'DEFAULT_MODULE'     => 'Home', //默认模块
-    'URL_MODEL'          => '0', //URL模式
+    'URL_MODEL'          => '2', //URL模式
     'DEFAULT_FILTER' => 'htmlspecialchars',//htmlspecialchars过滤
     'SESSION_AUTO_START' => true, //是否开启session
 	'URL_CASE_INSENSITIVE'  =>  true, //URL不区分大小写

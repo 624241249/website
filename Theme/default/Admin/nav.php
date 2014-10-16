@@ -13,8 +13,16 @@
 
         </ul>
     </li>
-    <li role="presentation"><a href="<?php echo U("Admin/index/comments");?>">评论</a></li>
-    
+    <li role="presentation"><a href="<?php echo U("Admin/index/comments");?>">评论</a></li> 
+     <li class="dropdown nav-stacked">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">友情链接<b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="<?php echo U("Admin/index/link");?>" >所有链接</a></li>
+            <li><a href="<?php echo U("Admin/index/linkadd");?>">添加链接</a></li>
+
+        </ul>
+    </li>
     <li role="presentation"><a href="<?php echo U('Admin/index/setting');?>">系统设置</a></li>
     <li role="presentation"><a href="<?php echo U("Admin/index/loginOut");?>"  onclick="{
                 if (confirm('确定退出?')) {

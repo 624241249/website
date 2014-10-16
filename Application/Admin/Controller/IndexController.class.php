@@ -136,9 +136,6 @@ class IndexController extends Controller {
 
             $this->comments = $comments;
 
-//        print_r($comments);
-//        die;
-
             $this->display("Admin:commentlist");
         }
     }
@@ -216,6 +213,85 @@ class IndexController extends Controller {
            // $this->theme(sk_option('theme'))->display('Admin/setting');
         }
     }
+    
+    
+    /**************************************************/
+    
+     public function link(){
+          if (!sk_islogin()) {
+            $this->success('请登录', "/?m=admin&a=login");
+        } else {
+              $link = M('link')->select();
+            $this->link = $link;
+            $this->theme(sk_option('theme'))->display('Admin/linklist');
+        }
+    }
+    
+    public function linkedit($id= 1){
+        if (!sk_islogin()) {
+            $this->success('请登录', "/?m=admin&a=login");
+        }else{
+              $this->link = M('link')->where("id='$id'")->select();
+            
+             $this->theme(sk_option('theme'))->display('Admin/linkedit');
+        }
+    }
+    
+    public function linkadd(){
+        if (!sk_islogin()) {
+            $this->success('请登录', "/?m=admin&a=login");
+        }else{
+             $this->theme(sk_option('theme'))->display('Admin/linkedit');
+        }
+    }
+    
+    /**
+     * 保存
+     */
+    public function linksave() {
+        if (!sk_islogin()) {
+            $this->success('请登录', "/?m=admin&a=login");
+        } else {
+            if (IS_POST) {
+                $page['id'] = I('param.id');
+                $page['name'] = I('param.name');
+                $page['weburl'] = I('param.weburl');
+                 
+
+                if ($page['id'] == "") {
+                    $result = M('link')->data($page)->add();
+                } else {
+                    $result = M('link')->data($page)->save();
+                }
+
+                $this->success('发布成功.');
+            } else {
+                $this->error('你干啥呢？');
+            }
+        }
+    }
+
+    /**
+     * 删除
+     */
+    public function linkdelete($id) {
+        if (!sk_islogin()) {
+            $this->success('请登录', "/?m=admin&a=login");
+        } else {
+            if (!is_numeric($id)) {
+                $this->error('参数错误');
+            }
+            $link = M("link");
+            $result = $link->where('id=' . $id)->delete();
+            if ($result) {
+                $this->success('删除成功.');
+            } else {
+                $this->error('删除失败，请重试.');
+            }
+        }
+    } 
+    
+    
 
 }
 

@@ -22,8 +22,6 @@ class PublicWidget extends Controller {
      */
     
       public function admin_articlelist() {
-      
-          
             /**
          *  初始化文章
          */
@@ -50,8 +48,6 @@ class PublicWidget extends Controller {
 //        $article = M("article")->where("type='article'")->select();
 //
 //        $this->article = $article;
- 
- 
         $this->display("Admin:articlelist");
     }
 

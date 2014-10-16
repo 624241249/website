@@ -14,6 +14,7 @@ function sk_option($meta_key, $type = 'public') {
 function sk_meta($meta_key, $type = 'public') {
     return M('meta')->where("meta_key='$meta_key' AND type='$type'")->getField('meta_value');
 }
+
 /**
  * 检查是否存在这个key
  * @param type $meta_key
@@ -23,8 +24,6 @@ function sk_check_meta($meta_key) {
     return M('meta')->where("meta_key='$meta_key'")->getField('meta_key');
 }
 
-
- 
 //网站地址
 function sk_site_url() {
 //	return M('option')->where("meta_key='site_url'")->getField('meta_value');
@@ -38,8 +37,6 @@ function sk_theme_url() {
     return sk_site_url() . '/Theme/default';
 }
 
-;
-
 //加载公共模板
 function sk_template_part($name) {
     echo W("Common/Public/index", array($name));
@@ -52,23 +49,17 @@ function sk_template_comment($articleid) {
 
 //加载文章模板
 function sk_template_articlelist($tag) {
-    echo W("Common/Public/articlelist",array($tag));
+    echo W("Common/Public/articlelist", array($tag));
 }
 
-
-
-
-function sk_islogin(){
+function sk_islogin() {
     $value = $_SESSION['admin_user'];
-    if($value == "aikangs"){
+    if ($value == "aikangs") {
         return true;
-    }
-    else{
+    } else {
         return false;
     }
 }
-
- 
 
 ////加载php文件
 //function mc_template($name) {
@@ -130,8 +121,8 @@ function sk_title() {
 }
 
 function sk_meta_seo() {
-    $keywords = sk_meta("site_keywords");//"java,php,WEB前端,web前端开发,javascript,HTML,css,技术随笔";//mc_option('article_keywords');
-    $description = sk_meta("site_description");//mc_option('article_description');
+    $keywords = sk_meta("site_keywords"); //"java,php,WEB前端,web前端开发,javascript,HTML,css,技术随笔";//mc_option('article_keywords');
+    $description = sk_meta("site_description"); //mc_option('article_description');
     $meta .= '<meta name="keywords" content="' . $keywords . '">';
     $meta .= '<meta name="description" content="' . $description . '">';
     return $meta;
@@ -202,6 +193,11 @@ function sk_get_article_tag() {
 
 
     return array_unique($res);
+}
+
+function sk_get_link() {
+    $link = M('link')->select();
+    return $link;
 }
 
 function findChild(&$arr, $id) {

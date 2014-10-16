@@ -33,7 +33,11 @@
     <div class="col-sm-12   panel  panel-info">
         <h3>友情链接</h3>
         <div class="panel-body tags">
-                <a href="http://www.google.com" target="_blank">Google</a>
+                <?php
+            foreach ($links as $key => $link) {
+                echo "<a href='".$link['weburl']."' target='_blank'/>".$link['name']."</a>";
+            }
+            ?>
         </div>
     </div>   
 
