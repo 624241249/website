@@ -77,7 +77,7 @@
                     if (strs[1] != -1) {
                     $("#admin-nav > li").eq(strs[1]).addClass("active");
                     }
-                }
+                }    
 
             });
         </script>
