@@ -87,10 +87,12 @@
                 if ($(window).width() < 768) {
                     $("nav").removeClass("navbar-fixed-top");
                     $("body").css("paddingTop", "0px");
+
                 }
                 else {
                     $("nav").addClass("navbar-fixed-top");
-                    $("body").css("paddingTop", "70px")
+                    $("body").css("paddingTop", "70px");
+
                 }
             });
         </script>
@@ -98,7 +100,11 @@
             $(function() {
                 $(window).scroll(function() {
                     if ($(window).scrollTop() >= 100) {
-                        $('.actGotop').fadeIn(300);
+                        if ($(window).width() > 768) {
+                            $('.actGotop').fadeIn(300);
+
+                        }
+
                     } else {
                         $('.actGotop').fadeOut(300);
                     }
