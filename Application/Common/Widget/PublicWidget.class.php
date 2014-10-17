@@ -37,7 +37,7 @@ class PublicWidget extends Controller {
 
         $count = $Article->where($map)->count(); // 查询满足要求的总记录数 $map表示查询条件
 
-        $Page = new \Think\Page($count, 5); // 实例化分页类 传入总记录数(这是根据@979137的意见修改的,这个建议非常好!)
+        $Page = new \Think\Page($count, 7); // 实例化分页类 传入总记录数(这是根据@979137的意见修改的,这个建议非常好!)
 
         $show = $Page->show(); // 分页显示输出
         // 进行分页数据查询
