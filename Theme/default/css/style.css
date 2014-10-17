@@ -16,9 +16,7 @@ body{
 	_background-image:none;
          padding-top: 70px;
 }
-@media (max-width: 768px) {
-  body{padding-top:285px;}
-}
+ 
 .actGotop{position:fixed; _position:absolute; bottom:100px; right:30px; width:150px; height:195px; display:none;z-index:999;}
 .actGotop a,.actGotop a:link{width:150px; height:195px; display:inline-block; background:url(../image/blog7year_gotop.png) no-repeat; _background:url(../image/blog7year_gotop.gif) no-repeat; outline:none;}
 .actGotop a:hover{width:150px; height:195px; background:url(../image/blog7year_gotopd.gif) no-repeat; outline:none;}
